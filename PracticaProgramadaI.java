@@ -5,15 +5,14 @@ public class PracticaProgramadaI {
     public static void main(String[] args) {
 
         String cadena = "11001110";
-        int i = cadena.length();
-        
-        
-        int[] arregloDeNumeros = {1, 2, 3, 4, 5, 6, 8};
-        
+        int i = cadena.length() - 1;
+
         contadorBitsEncendidos(cadena, i, 0);
+
+        int[] arregloDeNumeros = {1, 2, 3, 4, 5, 6, 8};
+
         encontrarNumerosPares(arregloDeNumeros, 0);
-        
-        
+
     }
 
     //Ejercicio #1
@@ -30,20 +29,17 @@ public class PracticaProgramadaI {
 
         return contadorBitsEncendidos(cadena, i - 1, contador);
     }
-    
+
     //Ejercicio #2
     public int encontrarNumerosPares(int[] arregloDeNumeros, int contador) {
         for (int i = 0; i < arregloDeNumeros.length; i++) {
             if (arregloDeNumeros[i] % 2 == 0) {
-                contador ++;
+                contador++;
             }
         }
         return contador;
     }
-    
+
     //Ejercicio #3
-    
-    
     // LA RESOUESTA ES 7
 }
-
